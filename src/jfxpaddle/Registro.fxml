@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" prefHeight="799.0" prefWidth="1480.0" style="-fx-background-color: #1DE3AE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxpaddle.RegistroController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.5" minWidth="4.0" prefWidth="17.666664123535156" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1480.0" minWidth="1480.0" prefWidth="1480.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.6666259765625" minWidth="0.0" prefWidth="11.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="799.0" minHeight="0.0" prefHeight="799.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1480.0" style="-fx-background-color: FFD100;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="799.0" fitWidth="1480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/fondo%202.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="298.0" fitWidth="447.0" layoutX="-43.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/Untitled2.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="702.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear una cuenta">
+               <font>
+                  <Font name="Impact" size="48.0" />
+               </font>
+            </Text>
+            <Button contentDisplay="CENTER" layoutX="729.0" layoutY="674.0" mnemonicParsing="false" onAction="#registrarse" prefHeight="73.0" prefWidth="285.0" style="-fx-background-color: FFB900; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Registrarse">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="59.0" fitWidth="126.0" layoutX="1023.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/pngocean.com%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="mensaje_registro" layoutX="321.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button layoutX="1203.0" layoutY="79.0" mnemonicParsing="false" onAction="#atras" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: FFB900; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Atrás">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Button>
+            <TextField fx:id="nombre" layoutX="632.0" layoutY="171.0" prefHeight="44.0" prefWidth="323.0" promptText="Nombre*" />
+            <TextField fx:id="apellidos" layoutX="632.0" layoutY="230.0" prefHeight="44.0" prefWidth="323.0" promptText="Apellidos*" />
+            <TextField fx:id="num_telf" layoutX="633.0" layoutY="288.0" prefHeight="44.0" prefWidth="323.0" promptText="Numero de Teléfono*" />
+            <TextField fx:id="login" layoutX="631.0" layoutY="411.0" prefHeight="44.0" prefWidth="231.0" promptText="Usuario*" />
+            <PasswordField fx:id="pass" layoutX="929.0" layoutY="410.0" prefHeight="44.0" prefWidth="242.0" promptText="Contraseña*" />
+            <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="574.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/user_84308.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="874.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/password_3715.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="577.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/telf.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="54.0" layoutX="578.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/pngocean.com.png" />
+               </image>
+            </ImageView>
+            <Line endX="420.0" layoutX="754.0" layoutY="500.0" startX="-164.0" />
+            <Text layoutX="567.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo de pago ">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="num_tarjeta" layoutX="630.0" layoutY="533.0" prefHeight="44.0" prefWidth="430.0" promptText="Numero de Tarjeta" />
+            <TextField fx:id="svc" layoutX="1066.0" layoutY="532.0" prefHeight="44.0" prefWidth="91.0" promptText="SVC" />
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="575.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/tarjeta.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="54.0" layoutX="576.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/pngocean.com.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivImagen" fitHeight="139.0" fitWidth="169.0" layoutX="994.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imatges/logo%20perfil.png" />
+               </image></ImageView>
+            <Button fx:id="btnBuscar" layoutX="990.0" layoutY="315.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: black;" text="Cambiar Imagen" textFill="WHITE" />
+            <Line endX="420.0" layoutX="756.0" layoutY="360.0" startX="-164.0" />
+            <Text layoutX="571.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos de Inicio" wrappingWidth="154.7333984375">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="15.0" />
+               </font>
+            </Text>
+            <Line endX="420.0" layoutX="757.0" layoutY="139.0" startX="-164.0" />
+            <Text layoutX="566.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información Personal" wrappingWidth="154.7333984375">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

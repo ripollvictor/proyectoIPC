@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-mar-2020, 16:33:06
+    Author     : Victor
+*/
+
+.time-slot {
+	
+      
+        -fx-background-image: url(TIMESLOTRESERVADO.jpg);
+        
+	-fx-background-insets: 0, 1 1 1 1 ;
+}
+
+.time-slot-libre{
+    -fx-background-color: black,  FFB900 ;
+        
+	-fx-background-insets: 0, 1 1 1 1 ;
+}
+
+.time-slot-user{
+    -fx-background-color: black, red;
+    
+    -fx-background-insets: 0, 1 1 1 1 ;
+
+    
+}
+
+.time-slot:selected {
+	-fx-background-color: purple;
+}
+
+
